@@ -1,12 +1,12 @@
+// eslint-disable-next-line no-unused-vars
 import React, {useState} from 'react'
 import stations from "../gares.json"
 import CityCard from './CityCard'
 
 const CityCards = () => {
 
-  let data = Object.keys(stations)
-
- const [cities, setCities ]= useState(data) 
+ // eslint-disable-next-line no-unused-vars
+ const [cities, setCities ]= useState(Object.keys(stations)) 
 
 
   return (
