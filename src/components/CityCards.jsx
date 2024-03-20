@@ -10,11 +10,15 @@ const CityCards = () => {
 
 
   return (
+    <>
+    <h1 className='title'>LISTE DES GARES DE LA SNCF</h1>
     <div className='city-cards'>
      {cities.map((city)=>{
       return <CityCard key = {city} city = {city} />
      })}
     </div>
+    </>
+    
   )
 }
 

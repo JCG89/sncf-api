@@ -37,7 +37,7 @@ const Departures = () => {
     };
     fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [codeStation]);
   const [isTimeDisplayed, setIsTimeDisplayed] = useState(true);
 
   useEffect(() => {

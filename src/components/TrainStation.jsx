@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Departures from "./Departures";
+import Arrivals from "./Arrivals";
 
 const TrainStation = () => {
   const [departureMode, setDepartureMode] = useState(true);
@@ -25,6 +26,7 @@ const TrainStation = () => {
         </button>
       </div>
       {departureMode && <Departures />}
+      {!departureMode && <Arrivals />}
     </div>
   );
 };

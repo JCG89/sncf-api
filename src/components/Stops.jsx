@@ -8,6 +8,7 @@ const Stops = ({ idDeparture }) => {
 
   useEffect(() => {
     const fetchDatas = async () => {
+      // eslint-disable-next-line no-unused-vars
       const res = await axios
         .get(
           `https://api.sncf.com/v1/coverage/sncf/vehicle_journeys/${idDeparture}`,
