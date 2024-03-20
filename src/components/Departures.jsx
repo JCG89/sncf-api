@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { parseUTCDate, getFullMinutes, calculateDelay } from "./utils";
+import Stops from "./Stops";
 
 import axios from "axios";
 
@@ -77,6 +78,8 @@ const Departures = () => {
           </p>
           {/*Destinations*/}
           <p className='departure__destination'>{departure.destination}</p>
+          {/* Impléméntation des arrêts*/ }
+          <Stops idDeparture = {departure.id}/>
         </div>
       ))}
     </div>
